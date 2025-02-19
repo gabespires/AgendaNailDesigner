@@ -1,0 +1,2 @@
+# AgendaNailDesigner
+ •	Sistema de agendamento para manicure integrado ao WhatsApp. A cliente entra em contato e recebe um link para um formulário, onde informa seu nome e escolhe os serviços desejados. O número de telefone é preenchido automaticamente. Em seguida, um calendário exibe as datas disponíveis, e após selecionar um dia, os horários livres são apresentados. Ao finalizar, uma mensagem automática com os detalhes do agendamento é enviada para o WhatsApp. A manicure pode visualizar todos os agendamentos e cancelar atendimentos.
