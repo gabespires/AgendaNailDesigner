@@ -2,9 +2,15 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const servico = new Schema({
+    servicoId: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Servico', 
+        required: true,
+    },
     salaoId: {
         type: mongoose.Types.ObjectId,
         ref: 'Salao', 
+        required: true,
     },
     titulo: {
         type: String,

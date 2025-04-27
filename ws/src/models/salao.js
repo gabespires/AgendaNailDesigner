@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const salao = new Schema({
+    salaoId: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Salao', 
+        required: true,
+    },
     nome: {
         type: String,
         require: [true, 'Nome é obrigatório.']
@@ -26,7 +31,7 @@ const salao = new Schema({
     },
     geo: {
         tipo: String,
-        coordinates: Array,
+        coordinates: [Number],
     },
     dataCadastro: {
         type: Date,
