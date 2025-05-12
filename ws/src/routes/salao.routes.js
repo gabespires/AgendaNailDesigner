@@ -3,8 +3,8 @@ const router = express.Router();
 const Salao = require('../models/salao');
 const Servico = require('../models/servico');
 const Horario = require('../models/horario');
-const turf = require('turf');
-const util = require('../util');
+const turf = require('@turf/turf');
+
 
 router.post('/', async (req, res) => {
     try{
