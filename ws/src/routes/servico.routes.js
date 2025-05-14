@@ -4,8 +4,8 @@ const Busboy = require('busboy');
 const aws = require('../services/aws');
 const Salao = require('../models/salao');
 const Servico = require('../models/servico');
-const Arquivos = require('../models/arquivos');
-const moment = require('moment');
+const Arquivos = require('../models/arquivo');
+
 
 router.post('/', async (req, res) => {
     let busboy = new Busboy({ headers: req.headers });
