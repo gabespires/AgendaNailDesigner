@@ -23,8 +23,9 @@ const agendamento = new Schema({
     },
     valor: {
         type: Number,
-        require: true,
+        required: true,
     },
+
     dataCadastro: {
         type: Date,
         default: Date.now,

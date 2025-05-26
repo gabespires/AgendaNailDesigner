@@ -4,6 +4,7 @@ const Salao = require('../models/salao');
 const Servico = require('../models/servico');
 const Horario = require('../models/horario');
 const turf = require('@turf/turf');
+const util = require('../util');
 
 
 router.post('/', async (req, res) => {

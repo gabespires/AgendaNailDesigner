@@ -2,14 +2,9 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const cliente = new Schema({
-    clienteId: {
-        type: mongoose.Types.ObjectId,
-        ref: 'Cliente', 
-        required: true,
-    },
     nome: {
         type: String,
-        require: [true, 'Nome é obrigatório.']
+        required: [true, 'Nome é obrigatório.']
     },
     foto: String,
     sexo: {
@@ -19,7 +14,7 @@ const cliente = new Schema({
     },
     email: {
         type: String,
-        require: [true, 'E-mail é obrigatório.']
+        required: [true, 'E-mail é obrigatório.']
     },
     senha: {
         type: String,
@@ -48,6 +43,7 @@ const cliente = new Schema({
         default: Date.now,
     },
 });
+
 
 
 module.exports = mongoose.model('Cliente', cliente);
