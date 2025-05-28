@@ -10,4 +10,5 @@ export function filterAgendamentos(start, end){
 
 export function updateAgendamento(agendamentos){
     return { type: types.UPDATE_AGENDAMENTO, agendamentos };
-}
+} 
+

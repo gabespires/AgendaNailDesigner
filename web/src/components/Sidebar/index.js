@@ -11,19 +11,19 @@ const Sidebar = () => {
                 <li>
                     <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
                         <span className="mdi mdi-calendar-check"></span>
-                        <text>Agendamentos</text>
+                        <span>Agendamentos</span>
                     </Link>
                 </li>
                 <li>
                     <Link to="/Clientes" className={location.pathname === '/Clientes' ? 'active' : ''}>
                         <span className="mdi mdi-account-multiple"></span>
-                        <text>Clientes</text>
+                        <span>Clientes</span>
                     </Link>
                 </li>
                 <li>
                     <Link to="/Horarios" className={location.pathname === '/Horarios' ? 'active' : ''}>
                         <span className="mdi mdi-calendar-check"></span>
-                        <text>Horários</text>
+                        <span>Horários</span>
                     </Link>
                 </li>
             </ul>

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
 import agendamento from './modules/agendamento/reducer';
-import clientes from './modules/cliente/reducer';
+import cliente from './modules/cliente/reducer';
 
-export default combineReducers({agendamento: agendamento, clientes, });
+export default combineReducers({agendamento: agendamento, cliente, });
